@@ -1,0 +1,9 @@
+/* Main */
+
+#main {
+	padding: 10em 0 0em;
+
+	@include breakpoint('<=small') {
+		padding: 5em 0 2em;
+	}
+}

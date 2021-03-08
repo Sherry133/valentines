@@ -1,0 +1,128 @@
+ #security {
+     .wrapper.alt.security {
+         margin-top: 0em;
+     }
+
+     &.image-security {
+         display: flex;
+         width: 60%;
+         justify-content: right;
+         align-items: right;
+     }
+
+     &.major-security {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         margin: 2em 0 .5em .5em;
+
+     }
+
+     .major.special-security h1 {
+         line-height: 1em;
+         width: 60%;
+         margin-top: 1em;
+         color: $color-blue;
+         //  font-weight: _font(700);
+         //  font-family: _font(family);
+         //  font-family: 'Poppins', sans-serif;
+
+     }
+
+     .major.special-security p {
+         margin: 7em 0 1em 0;
+         color: black;
+         letter-spacing: 1.1px;
+         font-size: 1em;
+     }
+
+     .item-nested-security h2 {
+         color: $color-blue;
+         width: 80%;
+         margin: 1em 0;
+         font-weight: _font(font-weight);
+     }
+
+     .item-nested-security p {
+         font-size: 1.1em;
+         width: 60%;
+     }
+
+     .fas {
+         color: green;
+     }
+
+     .item-header {
+         width: 80%;
+         line-height: 1em;
+     }
+
+     @include breakpoint('<=small') {
+         //  margin-bottom: _size(element-margin);
+
+         #security .major.special-security h2 {
+             font-size: 1.50em;
+             margin: 2em 0 .5em .5em;
+             color: red;
+         }
+
+         .item-nested-security p {
+
+             width: 100%;
+         }
+
+         .inner .item-nested-security h2 {
+             @include vendor('flex-shrink', '0');
+             width: 100%;
+             margin-top: 1em;
+             padding-top: -20em;
+             font-size: 1.75em;
+         }
+
+         .image-security {
+             @include vendor('flex-shrink', '0');
+             display: flex;
+             width: 100%;
+             height: auto;
+             justify-content: left;
+             align-items: center;
+             margin-left: 0em;
+         }
+
+         .item-header {
+             @include vendor('flex-shrink', '0');
+             font-size: 80%;
+             line-height: .60em;
+         }
+     }
+
+     @include breakpoint('<=xlarge') {
+         font-size: 12pt;
+     }
+
+     @include breakpoint('<=large') {
+         font-size: 12pt;
+     }
+
+     @include breakpoint('<=medium') {
+         font-size: 12pt;
+     }
+
+     @include breakpoint('<=small') {
+
+
+         p {
+             width: 80%;
+             font-size: 12pt;
+         }
+     }
+
+     @include breakpoint('<=xsmall') {
+         font-size: 12pt;
+     }
+
+     @include breakpoint('<=xxsmall') {
+         font-size: 11pt;
+     }
+ }

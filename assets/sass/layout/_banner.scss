@@ -1,0 +1,126 @@
+/* Banner */
+
+#banner {
+	@include vendor('background-image', url("../../images/twoboysatschool.jpg"));
+	// @include vendor('background-image', (
+	// 	'linear-gradient(to top, #{transparentize(_palette(bg), 0.1)}, #{transparentize(_palette(bg), 0.1)})',
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+	color: #ececec;
+	font-weight: 900;
+	padding: 16em 3em;
+	position: relative;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 1);
+
+
+	h1 {
+		color: inherit;
+		font-size: 4em;
+		text-align: center;
+		margin: 1.5em 0 0.65em 0;
+		padding: 0;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		font-weight: _font(weight-bold);
+		font-family: 'Poppins', sans-serif;
+	}
+
+	p {
+		font-size: 2em;
+		margin-bottom: 0.75em;
+		margin-top: -1.25em;
+		color: inherit;
+		letter-spacing: 3px;
+		font-weight: _font(weight);
+	}
+
+	.button {
+		min-width: 14em;
+		border-radius: 8px;
+		margin-top: 20%;
+	}
+
+	>.inner {
+		@include vendor('transition', ('opacity 1s ease-in-out',
+				'transform 1s ease-in-out'
+			));
+		opacity: 1;
+		position: relative;
+		z-index: 1;
+	}
+
+	&:after {
+		@include vendor('transition', 'opacity 1s ease-in-out');
+		@include vendor('pointer-events', 'none');
+		content: '';
+		display: block;
+		background-color: desaturate(darken(_palette(bg-alt), 10), 5);
+		opacity: .4;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	body.is-preload & {
+		.inner {
+			@include vendor('transform', 'translateY(1em)');
+			opacity: 0;
+		}
+
+		&:after {
+			opacity: .4;
+		}
+	}
+
+	@include breakpoint('<=large') {
+		background-attachment: scroll;
+		padding: 16em 3em;
+	}
+
+	@include breakpoint('<=medium') {
+		h1 {
+			font-size: 2.8em;
+		}
+	}
+
+	@include breakpoint('<=small') {
+
+		h1 {
+			font-size: 2.25em;
+		}
+
+		p {
+			margin: 0em 0 0.65em 0;
+			padding: 0;
+			font-size: 1.25em;
+			text-align: center;
+			color: inherit;
+		}
+	}
+
+	@include breakpoint('<=xsmall') {
+		background-image: url("../../images/twoboysatschool_sm.jpg");
+
+		h1 {
+			font-size: 1.75em;
+			margin-top: -4em;
+			line-height: 1em;
+			font-weight: _font(weight);
+
+		}
+
+		p {
+			font-size: 1.25;
+			margin-top: 9em;
+		}
+	}
+
+
+	@include breakpoint('<=xxsmall') {
+		padding: 6em 2em;
+	}
+}

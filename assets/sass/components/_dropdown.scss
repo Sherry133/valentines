@@ -1,0 +1,89 @@
+#menu>li,
+#menu>a {
+    display: inline-block;
+    transition: color 650ms;
+
+}
+
+#menu a:hover {
+    background-color: rgba(255, 255, 255, .3);
+    color: $color-blue;
+}
+
+#menu a {
+    display: block;
+    transition: background-color .33s ease, color .22s ease;
+    text-decoration: none;
+    color: black;
+}
+
+.submenu {
+    position: absolute;
+    background-color: transparent;
+    width: 140px;
+    left: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+    color: #000;
+}
+
+#menu li:hover>.submenu {
+    display: block;
+    animation: slideup .3s ease-in-out;
+    font-size: .75em;
+    background-color: $color-blue;
+    margin: 0 .75em 0 .75em;
+    border-radius: 6px;
+}
+
+
+
+.submenu2 {
+    position: absolute;
+    background-color: transparent;
+    width: 140px;
+    left: 0;
+    list-style: none;
+    display: none;
+    color: #000;
+}
+
+#menu li:hover>.submenu2 {
+    display: block;
+    animation: slideup .3s ease-in-out;
+    font-size: .75em;
+    background-color: $color-blue;
+    margin: 0 .75em 0 .75em;
+    border-radius: 6px;
+
+}
+
+//animation
+@keyframes slideup {
+    0% {
+        opacity: 0;
+        transform: translateY(18px);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+
+    }
+}
+
+@keyframes slideleft {
+    0% {
+        opacity: 0;
+        transform: translateX(18px);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+
+    }
+}

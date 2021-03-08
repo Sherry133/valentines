@@ -1,0 +1,171 @@
+// /* Facts file */
+// :root {
+//     --blue: #0058a3;
+//     --black: black;
+//     --fs-h2: 2.75rem;
+//     --fs-h2-sm: 2rem;
+// }
+
+// html,
+// body {
+
+//     box-sizing: border-box;
+//     font-family: "Roboto", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+//     font-weight: 500;
+//     font-size: 16px;
+//     color: var(--black);
+//     text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+//     text-align: left;
+//     margin: 0 auto;
+//     width: 100%;
+//     width: 100vw;
+//     height: auto;
+// }
+
+// h1,
+// h2 {
+//     font-family: "Roboto", "Open-sans";
+//     color: var(--blue);
+//     text-align: left;
+//     font-size: var(--fs-h2);
+// }
+
+// #page {
+//     display: grid;
+//     grid-template-columns: repeat(2, minmax(auto-fit, 1fr));
+//     grid-template-rows: minmax(auto-fit, 1fr);
+//     max-width: 100%;
+//     margin: 0 auto;
+//     align-items: center;
+//     grid-template-areas: "header header""nav nav""footer footer""main main";
+//     grid-gap: 0;
+// }
+
+// #page div {
+//     background: lightslategray;
+//     padding-left: 2.5rem;
+//     width: 100%;
+//     width: 100vw;
+
+// }
+
+// #page .header {
+//     grid-area: header;
+//     background-color: #ececec;
+//     display: flex;
+//     justify-content: left;
+//     align-items: center;
+
+// }
+
+// #page .nav {
+//     grid-area: nav;
+//     width: 100%;
+//     display: flex;
+//     justify-content: left;
+//     align-items: center;
+// }
+
+// #page .nav h1 {
+//     color: #0058a3;
+//     text-align: left;
+//     width: 80%;
+// }
+
+// #page .main {
+//     grid-area: main;
+//     padding-left: 0;
+//     width: 100%;
+// }
+
+// #page .footer {
+//     grid-area: footer;
+//     background-color: red;
+//     font-size: 1.25rem;
+//     height: 2em;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// .nested {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     grid-gap: 0;
+//     width: 100%;
+
+//     color: #ececec;
+// }
+
+// .nested p {
+//     border: 2px solid #ececec;
+//     padding: 20px;
+//     width: 80%;
+//     font-size: 1.25em;
+//     overflow: hidden;
+// }
+
+// .nested .intro {
+//     color: var(--blue);
+//     line-height: 3em;
+// }
+
+// @media (max-width: 536px) {
+//     #page div {
+//         grid-template-columns: 1fr;
+//         width: 100%;
+//         overflow: hidden;
+//     }
+
+//     .nested .intro {
+//         line-height: 1em;
+//     }
+
+//     .list-group {
+//         padding: 10px;
+//         margin: auto 0;
+//         list-style-type: circle;
+//         width: 75%;
+//         overflow: hidden;
+//     }
+
+//     #page h1 {
+//         font-size: var(--fs-h2-sm);
+//         text-align: left;
+//         color: var(--blue);
+//         width: 85%;
+//     }
+
+//     .footer a {
+//         margin-left: -3em;
+//     }
+
+//     #page h2 {
+//         font-size: var(--fs-h2-sm);
+//     }
+// }
+
+// @media (max-width: 767px) {
+//     .nested {
+//         grid-template-columns: 1fr 1fr;
+//         grid-template-rows: repeat(3, 1fr);
+//         padding: 1em;
+//         width: 100%;
+//     }
+
+//     h1,
+//     h2 {
+//         font-size: 235%;
+//         text-align: left;
+//     }
+// }
+
+// .list-group {
+//     margin-top: -1em;
+//     list-style-type: circle;
+//     text-align: left;
+//     color: #ececec;
+//     font-size: 1.25rem;
+
+
+// }

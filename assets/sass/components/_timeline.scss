@@ -1,0 +1,168 @@
+//This is the section on SERVICE/ONLINE BANKING TECHNOLOGY
+
+/* Timeline */
+
+
+.timeline {
+	>section {
+		@include vendor('display', 'flex');
+
+		border-left: solid _size(border-width);
+		position: relative;
+
+
+		&:before {
+			position: absolute;
+			content: '';
+			border-radius: 100%;
+			width: 1em;
+			height: 1em;
+			left: -0.5em;
+			top: 0;
+		}
+
+		&:last-child {
+			border-left: 0;
+
+		}
+	}
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 250px 300px 2fr;
+	grid-auto-rows: 1fr;
+	grid-gap: 10px;
+	justify-content: left;
+	align-items: left;
+	margin: 0;
+	height: 100%;
+	grid-template-areas: "header image content"
+		"header image content"
+		"header image content";
+
+	&header {
+		grid-area: header;
+		@include vendor('grid', '0');
+		margin-bottom: _size(element-margin);
+		padding: 0 2.5em;
+
+
+		h4 {
+			font-weight: _font(weight-bold);
+			text-transform: uppercase;
+			// padding: 0 2.5em;
+		}
+
+		&.header p {
+			margin-bottom: 0.5em;
+			font-weight: _font(weight-bold);
+		}
+	}
+
+	.image {
+		grid-area: image;
+		margin-bottom: _size(element-margin);
+
+	}
+
+	.content {
+		grid-area: content;
+		margin-bottom: _size(element-margin);
+		justify-self: left;
+		align-self: left;
+		width: 80%;
+		margin: 0 0 _size(element-margin-bottom 0);
+		--ms-flex: 1;
+
+		p {
+			padding: 1em;
+			margin-bottom: (_size(element-margin));
+		}
+
+		.button {
+			margin-left: 1.75em;
+		}
+	}
+}
+
+@include breakpoint('<=medium') {
+	>section {
+		@include vendor('flex-wrap', 'wrap');
+		padding-left: 2em;
+	}
+
+	header {
+		margin-bottom: 1em;
+		padding: 0;
+		width: 100%;
+	}
+}
+
+@include breakpoint('<=xsmall') {
+	.grid-container {
+		display: grid;
+		grid-template-areas: "header"
+			"image"
+			"content";
+	}
+
+	.header h4,
+	p {
+		margin-right: 5em;
+		margin-bottom: (_size(element-margin));
+	}
+
+	&.content p {
+		// color: green;
+		margin: -5em -5em _size(element-margin) 0;
+		height: auto;
+	}
+
+	.image {
+		position: relative;
+		margin: -6em -5em _size(element-margin) 0;
+	}
+
+	.button {
+		width: 100%;
+
+	}
+}
+
+
+
+// >section {
+// 	padding-left: 1.5em;
+// }
+
+
+
+@mixin color-timeline($p: null) {
+	$highlight: _palette($p, highlight);
+
+	.timeline {
+
+		>section {
+			border-color: _palette($p, fg-light);
+
+			&:before {
+				background-color: _palette($p, fg-light);
+			}
+		}
+
+		header {
+			@if $p==$highlight {
+				p {
+					color: _palette($p, fg-bold);
+				}
+			}
+
+			@else {
+				p {
+					color: _palette($highlight, bg);
+				}
+			}
+		}
+	}
+}

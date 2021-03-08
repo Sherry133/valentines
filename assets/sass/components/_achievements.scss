@@ -1,0 +1,79 @@
+/* Header */
+
+#main {
+    .major.special-achievements h4 {
+        margin: 1em 0 0em;
+        color: black;
+        font-weight: _font(weight-bold);
+        text-transform: uppercase;
+        font-size: 1em;
+
+    }
+
+    .major.special-achievements h1 {
+        width: 80%;
+        margin: 1em 0 0 0;
+        line-height: 1.0;
+
+    }
+}
+
+// #menu {
+//     z-index: 10;
+// }
+#main .wrapper.alt {
+    margin: -1em 0 0 0;
+}
+
+.wrapper.alt::before {
+    transform: translateY(10%) rotate(10%);
+    color: blue;
+}
+
+.intro-achievements h2 {
+    margin: 1em 0 0 0;
+
+}
+
+.item-nested p {
+    font-size: 1.3em;
+    line-height: 1em;
+    margin: 1em 1em;
+    color: _palette(fg-med);
+}
+
+.item-nested h2 {
+    line-height: 1em;
+    width: 80%;
+    margin: .5em 0;
+}
+
+.item-nested .fas {
+    color: red;
+}
+
+.item-header h2 {
+    margin: 0 auto;
+    color: red;
+}
+
+@include breakpoint('<=small') {
+    &.main {
+        margin: 0 0.5em 0;
+        width: 100%;
+    }
+
+    &.major.special-achievements h2 {
+        margin: 0 0 3em .5em;
+        line-height: 1em;
+        color: red;
+    }
+
+    .image-achievements {
+        margin-top: 2em;
+    }
+
+    .item-nested p {
+        width: 95%;
+    }
+}

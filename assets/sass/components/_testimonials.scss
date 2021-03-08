@@ -1,0 +1,66 @@
+/* Header */
+#main {
+    .inner .major-testimonials p {
+        color: #ececec;
+        font-weight: 300;
+        width: 80%;
+        letter-spacing: 1.5px;
+    }
+
+    .inner .major-testimonials h2 {
+        margin: 0 0;
+        letter-spacing: 3px;
+        color: $color-red-apple;
+        font-weight: $font-weight-bold;
+    }
+
+    .inner .major.special-testimonials p {
+        color: #fff;
+        letter-spacing: 1.5px;
+    }
+
+    .inner .major.special-testimonials h1 {
+        color: #fff;
+        letter-spacing: 3px;
+    }
+}
+
+body .testimonials {
+    background: #4B4D91;
+}
+
+.image.main {
+    border: 0;
+    display: block;
+    position: relative;
+
+    img {
+        #main {
+
+            display: block;
+            position: relative;
+            padding: 0 (_size(element-margin) * 1.5) 0 !important;
+            width: 100%;
+
+
+            img {
+                width: 100%;
+                z-index: -5;
+                margin: 5em 0 0 0;
+            }
+        }
+    }
+
+}
+
+@include breakpoint('<=xsmall') {
+    #main {
+        margin: 0 0 .5em 0em;
+
+    }
+
+    .inner .major.special-testimonials p {
+        margin: 1.5em 0;
+    }
+
+}

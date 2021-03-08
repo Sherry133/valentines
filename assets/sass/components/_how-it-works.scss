@@ -1,0 +1,91 @@
+//COMING SOON
+
+#three {
+    header.major-works.alt h1 {
+        margin: 2em 0 _size(element-margin_sm) 0;
+
+    }
+
+    header.major-works.alt h3 {
+        margin: -1em 0 _size(element-margin) 0;
+        color: $color-black;
+
+    }
+}
+
+/* Posts */
+
+.posts {
+
+    article {
+        // @include vendor('display', 'flex');
+        @include vendor('align-items', 'center');
+        margin-bottom: _size(element-margin);
+
+
+        .content-posts p {
+            margin-right: 6em;
+        }
+
+        .content {
+            --ms-flex: 1;
+            color: _palette(fg-med);
+
+        }
+
+        .image {
+            @include vendor('order', '99');
+            margin: 0 0 _size(element-margin) _size(element-margin);
+        }
+
+        &.alt {
+            .image {
+                @include vendor('order', '-1');
+                margin: 0 _size(element-margin) _size(element-margin) 0;
+            }
+        }
+    }
+
+    @include breakpoint('<=large') {
+        .content {
+            @include vendor('flex-shrink', '0');
+            width: 33%;
+        }
+
+        .image {
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    @include breakpoint('<=medium') {
+        article {
+            @include vendor('flex-wrap', 'wrap');
+
+            .content {
+                width: 100%;
+            }
+
+            .image {
+                @include vendor('order', '-1');
+                margin-left: 0;
+                margin-right: 0;
+                width: 100%;
+            }
+        }
+    }
+
+    @include breakpoint('<=xsmall') {
+        article {
+            @include vendor('flex-wrap', 'wrap');
+
+            .content-post p {
+                margin-bottom: _size(element-margin_sm);
+            }
+        }
+
+    }
+}
+
+//COMING SOON
