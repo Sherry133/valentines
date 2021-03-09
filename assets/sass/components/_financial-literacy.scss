@@ -23,8 +23,8 @@
         margin-bottom: _size(element-margin);
 
 
-        .content-posts p {
-            margin-right: 6em;
+        .content-literacy p {
+            margin-right: 12em;
         }
 
         .content {
@@ -67,10 +67,14 @@
                 width: 100%;
             }
 
+            .content-literacy p {
+                margin-right: 6em;
+            }
+
             .image {
                 @include vendor('order', '-1');
-                margin-left: 0;
-                margin-right: 0;
+                margin: 0;
+                padding: 0em;
                 width: 100%;
             }
         }
@@ -80,8 +84,9 @@
         article {
             @include vendor('flex-wrap', 'wrap');
 
-            .content-post p {
+            .content-literacy p {
                 margin-bottom: _size(element-margin_sm);
+                margin-right: 4em;
             }
         }
 

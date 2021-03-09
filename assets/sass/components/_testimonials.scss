@@ -1,7 +1,7 @@
 /* Header */
 #main {
     .inner .major-testimonials p {
-        color: #ececec;
+        color: $color-off-white;
         font-weight: 300;
         width: 80%;
         letter-spacing: 1.5px;
@@ -10,7 +10,7 @@
     .inner .major-testimonials h2 {
         margin: 0 0;
         letter-spacing: 3px;
-        color: $color-red-apple;
+        color: $color-off-white;
         font-weight: $font-weight-bold;
     }
 
@@ -22,12 +22,23 @@
     .inner .major.special-testimonials h1 {
         color: #fff;
         letter-spacing: 3px;
+        // z-index: 500000;
     }
+
+
+}
+
+.major-testimonials .fas {
+    color: $color-red-apple;
 }
 
 body .testimonials {
     background: #4B4D91;
+    z-index: -20;
+
 }
+
+
 
 .image.main {
     border: 0;

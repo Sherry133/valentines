@@ -193,7 +193,7 @@ body.is-preload *:after {
 /* Type */
 body {
   background-color: #fff;
-  color: #ececec;
+  color: #fff;
 }
 
 body,
@@ -2190,7 +2190,7 @@ select option {
 
 input[type="checkbox"] + label,
 input[type="radio"] + label {
-  color: #ececec;
+  color: #fff;
 }
 
 input[type="checkbox"] + label:before,
@@ -3632,7 +3632,7 @@ table.alt tbody tr td {
 #main .inner .major-testimonials h2 {
   margin: 0 0;
   letter-spacing: 3px;
-  color: #CB1318;
+  color: #ececec;
   font-weight: 700;
 }
 
@@ -3646,8 +3646,13 @@ table.alt tbody tr td {
   letter-spacing: 3px;
 }
 
+.major-testimonials .fas {
+  color: #CB1318;
+}
+
 body .testimonials {
   background: #4B4D91;
+  z-index: -20;
 }
 
 .image.main {
@@ -3798,7 +3803,7 @@ body .testimonials {
 
 .inner .start h4 {
   margin: -1em 0 -.5em 0;
-  color: black;
+  color: #272727;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -3854,7 +3859,7 @@ body .testimonials {
 /* Header */
 #main .major.special-achievements h4 {
   margin: 1em 0 0em;
-  color: black;
+  color: #272727;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1em;
@@ -3873,7 +3878,7 @@ body .testimonials {
 .wrapper.alt::before {
   -webkit-transform: translateY(10%) rotate(10%);
           transform: translateY(10%) rotate(10%);
-  color: blue;
+  color: #005a80;
 }
 
 .intro-achievements h2 {
@@ -3894,12 +3899,12 @@ body .testimonials {
 }
 
 .item-nested .fas {
-  color: red;
+  color: #CB1318;
 }
 
 .item-header h2 {
   margin: 0 auto;
-  color: red;
+  color: #b7475a;
 }
 
 @media screen and (max-width: 736px) {
@@ -3910,7 +3915,7 @@ body .testimonials {
   .major.special-achievements h2 {
     margin: 0 0 3em .5em;
     line-height: 1em;
-    color: red;
+    color: #b7475a;
   }
   .image-achievements {
     margin-top: 2em;
@@ -4104,91 +4109,40 @@ body .testimonials {
   }
 }
 
-#three header.major-works.alt h1 {
+#main header.major-works.alt h1 {
   margin: 2em 0 1em 0;
 }
 
-#three header.major-works.alt h3 {
+#main header.major-works.alt h3 {
   margin: -1em 0 2em 0;
   color: #272727;
 }
 
-/* Posts */
-.posts article {
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 2em;
+.image.main {
+  border: 0;
+  display: block;
+  position: relative;
 }
 
-.posts article .content-posts p {
-  margin-right: 6em;
+.image.main img #main {
+  display: block;
+  position: relative;
+  padding: 0 3em 0 !important;
+  width: 100%;
 }
 
-.posts article .content {
-  --ms-flex: 1;
-  color: #272727;
-}
-
-.posts article .image {
-  -moz-order: 99;
-  -ms-order: 99;
-  -webkit-box-ordinal-group: 100;
-      -ms-flex-order: 99;
-          order: 99;
-  margin: 0 0 2em 2em;
-}
-
-.posts article.alt .image {
-  -moz-order: -1;
-  -ms-order: -1;
-  -webkit-box-ordinal-group: 0;
-      -ms-flex-order: -1;
-          order: -1;
-  margin: 0 2em 2em 0;
-}
-
-@media screen and (max-width: 1280px) {
-  .posts .content {
-    -ms-flex-shrink: 0;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    width: 33%;
-  }
-  .posts .image img {
-    max-width: 100%;
-  }
-}
-
-@media screen and (max-width: 980px) {
-  .posts article {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-  .posts article .content {
-    width: 100%;
-  }
-  .posts article .image {
-    -moz-order: -1;
-    -ms-order: -1;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-  }
+.image.main img #main img {
+  width: 100%;
+  z-index: -5;
+  margin: 5em 0 0 0;
 }
 
 @media screen and (max-width: 480px) {
-  .posts article {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+  #main {
+    margin: 0 0 .5em 0em;
   }
-  .posts article .content-post p {
-    margin-bottom: 1em;
+  .inner .major.special-testimonials p {
+    margin: 1.5em 0;
   }
 }
 
@@ -4211,8 +4165,8 @@ body .testimonials {
   margin-bottom: 2em;
 }
 
-.posts article .content-posts p {
-  margin-right: 6em;
+.posts article .content-literacy p {
+  margin-right: 12em;
 }
 
 .posts article .content {
@@ -4258,14 +4212,17 @@ body .testimonials {
   .posts article .content {
     width: 100%;
   }
+  .posts article .content-literacy p {
+    margin-right: 6em;
+  }
   .posts article .image {
     -moz-order: -1;
     -ms-order: -1;
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0;
+    padding: 0em;
     width: 100%;
   }
 }
@@ -4275,8 +4232,9 @@ body .testimonials {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-  .posts article .content-post p {
+  .posts article .content-literacy p {
     margin-bottom: 1em;
+    margin-right: 4em;
   }
 }
 
@@ -4614,7 +4572,7 @@ body.is-menu-visible #menu .inner {
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
-  color: #ececec;
+  color: #fff;
   font-weight: 900;
   padding: 16em 3em;
   position: relative;

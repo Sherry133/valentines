@@ -1,6 +1,6 @@
 //COMING SOON
 
-#three {
+#main {
     header.major-works.alt h1 {
         margin: 2em 0 _size(element-margin_sm) 0;
 
@@ -13,79 +13,38 @@
     }
 }
 
-/* Posts */
+.image.main {
+    border: 0;
+    display: block;
+    position: relative;
 
-.posts {
+    img {
+        #main {
 
-    article {
-        // @include vendor('display', 'flex');
-        @include vendor('align-items', 'center');
-        margin-bottom: _size(element-margin);
+            display: block;
+            position: relative;
+            padding: 0 (_size(element-margin) * 1.5) 0 !important;
+            width: 100%;
 
 
-        .content-posts p {
-            margin-right: 6em;
-        }
-
-        .content {
-            --ms-flex: 1;
-            color: _palette(fg-med);
-
-        }
-
-        .image {
-            @include vendor('order', '99');
-            margin: 0 0 _size(element-margin) _size(element-margin);
-        }
-
-        &.alt {
-            .image {
-                @include vendor('order', '-1');
-                margin: 0 _size(element-margin) _size(element-margin) 0;
-            }
-        }
-    }
-
-    @include breakpoint('<=large') {
-        .content {
-            @include vendor('flex-shrink', '0');
-            width: 33%;
-        }
-
-        .image {
             img {
-                max-width: 100%;
-            }
-        }
-    }
-
-    @include breakpoint('<=medium') {
-        article {
-            @include vendor('flex-wrap', 'wrap');
-
-            .content {
                 width: 100%;
-            }
-
-            .image {
-                @include vendor('order', '-1');
-                margin-left: 0;
-                margin-right: 0;
-                width: 100%;
+                z-index: -5;
+                margin: 5em 0 0 0;
             }
         }
     }
 
-    @include breakpoint('<=xsmall') {
-        article {
-            @include vendor('flex-wrap', 'wrap');
-
-            .content-post p {
-                margin-bottom: _size(element-margin_sm);
-            }
-        }
-
-    }
 }
 
-//COMING SOON
+@include breakpoint('<=xsmall') {
+    #main {
+        margin: 0 0 .5em 0em;
+
+    }
+
+    .inner .major.special-testimonials p {
+        margin: 1.5em 0;
+    }
+
+}
