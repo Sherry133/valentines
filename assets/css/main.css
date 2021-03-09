@@ -4261,8 +4261,7 @@ body .testimonials {
   transition-property: background-color padding;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
-  background: #cccccc;
-  color: #ffffff;
+  background: #fff;
   left: 0;
   padding: 1em;
   position: fixed;
