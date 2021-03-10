@@ -50,12 +50,14 @@
      }
 
      .fas {
-         color: green;
+         color: $color-green;
+         font-size: 1.3em;
      }
 
-     .item-header {
+     .nacha {
          width: 80%;
          line-height: 1em;
+         color: $color-blue;
      }
 
      @include breakpoint('<=small') {
@@ -64,7 +66,6 @@
          #security .major.special-security h2 {
              font-size: 1.50em;
              margin: 2em 0 .5em .5em;
-             color: red;
          }
 
          .item-nested-security p {
@@ -90,10 +91,11 @@
              margin-left: 0em;
          }
 
-         .item-header {
+         .nacha {
              @include vendor('flex-shrink', '0');
              font-size: 80%;
-             line-height: .60em;
+             line-height: 1em;
+
          }
      }
 
@@ -113,16 +115,22 @@
 
 
          p {
-             width: 80%;
+             width: 90%;
              font-size: 12pt;
          }
      }
 
      @include breakpoint('<=xsmall') {
          font-size: 12pt;
-     }
 
-     @include breakpoint('<=xxsmall') {
-         font-size: 11pt;
+         .major.special-security h1 {
+             line-height: 1em;
+             width: 80%;
+
+         }
+
+         @include breakpoint('<=xxsmall') {
+             font-size: 11pt;
+         }
      }
  }

@@ -3810,8 +3810,17 @@ body .testimonials {
 
 .intro h2 {
   margin: .5em 0 -1em 0em;
+  color: #266a2e;
+  font-weight: 700;
+}
+
+.intro .start-schools {
   color: #005a80;
   font-weight: 400;
+}
+
+.item-nested-start .fas {
+  color: #CB1318;
 }
 
 .intro h3 {
@@ -3844,6 +3853,9 @@ body .testimonials {
   .main {
     margin: 0 0.5em 0;
     width: 100%;
+  }
+  .inner .start h1 {
+    margin-top: .5em;
   }
   h2 {
     line-height: 1em;
@@ -3896,6 +3908,7 @@ body .testimonials {
   line-height: 1em;
   width: 80%;
   margin: .5em 0;
+  color: #266a2e;
 }
 
 .item-nested .fas {
@@ -3904,7 +3917,7 @@ body .testimonials {
 
 .item-header h2 {
   margin: 0 auto;
-  color: #b7475a;
+  color: #266a2e;
 }
 
 @media screen and (max-width: 736px) {
@@ -4020,19 +4033,20 @@ body .testimonials {
 }
 
 #security .fas {
-  color: green;
+  color: #266a2e;
+  font-size: 1.3em;
 }
 
-#security .item-header {
+#security .nacha {
   width: 80%;
   line-height: 1em;
+  color: #005a80;
 }
 
 @media screen and (max-width: 736px) {
   #security #security .major.special-security h2 {
     font-size: 1.50em;
     margin: 2em 0 .5em .5em;
-    color: red;
   }
   #security .item-nested-security p {
     width: 100%;
@@ -4063,12 +4077,12 @@ body .testimonials {
             align-items: center;
     margin-left: 0em;
   }
-  #security .item-header {
+  #security .nacha {
     -ms-flex-shrink: 0;
     -ms-flex-negative: 0;
         flex-shrink: 0;
     font-size: 80%;
-    line-height: .60em;
+    line-height: 1em;
   }
 }
 
@@ -4092,7 +4106,7 @@ body .testimonials {
 
 @media screen and (max-width: 736px) {
   #security p {
-    width: 80%;
+    width: 90%;
     font-size: 12pt;
   }
 }
@@ -4101,9 +4115,13 @@ body .testimonials {
   #security {
     font-size: 12pt;
   }
+  #security .major.special-security h1 {
+    line-height: 1em;
+    width: 80%;
+  }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 480px) and (max-width: 360px) {
   #security {
     font-size: 11pt;
   }

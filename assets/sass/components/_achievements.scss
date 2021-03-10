@@ -46,6 +46,7 @@
     line-height: 1em;
     width: 80%;
     margin: .5em 0;
+    color: $color-green;
 }
 
 .item-nested .fas {
@@ -54,7 +55,7 @@
 
 .item-header h2 {
     margin: 0 auto;
-    color: $color-red;
+    color: $color-green;
 }
 
 @include breakpoint('<=small') {

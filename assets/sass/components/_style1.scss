@@ -17,8 +17,17 @@
 
 .intro h2 {
     margin: .5em 0 -1em 0em;
+    color: $color-green;
+    font-weight: _font(weight-bold);
+}
+
+.intro .start-schools {
     color: $color-blue;
     font-weight: _font(weight);
+}
+
+.item-nested-start .fas {
+    color: $color-red-apple;
 }
 
 .intro h3 {
@@ -51,6 +60,10 @@
     &.main {
         margin: 0 0.5em 0;
         width: 100%;
+    }
+
+    .inner .start h1 {
+        margin-top: .5em;
     }
 
     h2 {
