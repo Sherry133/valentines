@@ -20,11 +20,15 @@
     article {
         // @include vendor('display', 'flex');
         @include vendor('align-items', 'center');
-        margin-bottom: _size(element-margin);
+        margin-bottom: _size(element-margin_sm);
 
 
         .content-literacy p {
-            margin-right: 12em;
+            margin: 0 12em size(element0margin_sm) 0;
+        }
+
+        .fas {
+            padding: 0 5px;
         }
 
         .content {
@@ -35,7 +39,7 @@
 
         .image {
             @include vendor('order', '99');
-            margin: 0 0 _size(element-margin) _size(element-margin);
+            margin: 0 3em _size(element-margin) _size(element-margin);
         }
 
         &.alt {
@@ -87,6 +91,10 @@
             .content-literacy p {
                 margin-bottom: _size(element-margin_sm);
                 margin-right: 4em;
+            }
+
+            .fas {
+                padding: 0 8px;
             }
         }
 

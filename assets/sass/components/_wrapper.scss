@@ -53,7 +53,8 @@
 
 	&.style1 {
 		@include color(accent1);
-		@include wrapper-edges-color(_palette(accent1, bg));
+		@include wrapper-edges-color(_palette(accent1, fg));
+
 	}
 
 	&.style2 {
@@ -76,7 +77,11 @@
 		&:before,
 		&:after {
 			height: 3em;
+
+
 		}
+
+
 	}
 
 	@include breakpoint('<=small') {

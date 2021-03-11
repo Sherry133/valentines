@@ -36,10 +36,11 @@
 }
 
 .item-nested p {
-    font-size: 1.3em;
+    // font-size: 1.3em;
     line-height: 1em;
     margin: 1em 1em;
-    color: _palette(fg-med);
+    color: $color-black;
+    // color: _palette(fg-med);
 }
 
 .item-nested h2 {
