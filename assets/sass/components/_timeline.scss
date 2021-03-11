@@ -99,9 +99,13 @@
 			"header image content";
 	}
 
+	.header h4 {
+		text-transform: uppercase;
+	}
+
 	.header h4,
 	p {
-		text-transform: uppercase;
+
 		// margin-bottom: 0.5em;
 		font-weight: _font(weight-bold);
 		margin-right: 5em;

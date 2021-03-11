@@ -3027,9 +3027,11 @@ table.alt tbody tr td {
     height: 100%;
         grid-template-areas: "header image content";
   }
+  .header h4 {
+    text-transform: uppercase;
+  }
   .header h4,
   p {
-    text-transform: uppercase;
     font-weight: 700;
     margin-right: 5em;
     margin-bottom: 2em;
@@ -4058,7 +4060,7 @@ body .testimonials {
 
 #security .major.special-security p {
   margin: 7em 0 1em 0;
-  color: black;
+  color: #272727;
   letter-spacing: 1.1px;
   font-size: 1em;
 }
