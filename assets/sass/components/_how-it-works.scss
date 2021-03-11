@@ -78,6 +78,10 @@
         p:first-child:first-letter {
             display: inline-block;
         }
+
+        p {
+            width: 100%;
+        }
     }
 
 }

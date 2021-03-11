@@ -85,6 +85,15 @@
 		h1 {
 			font-size: 2.8em;
 		}
+
+		p {
+			// margin: 0em 0 0.65em 0;
+
+			width: 100%;
+			font-size: 1.75em;
+			text-align: center;
+
+		}
 	}
 
 	@include breakpoint('<=small') {

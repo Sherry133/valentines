@@ -32,19 +32,18 @@
 	display: grid;
 	grid-template-columns: 250px 300px 2fr;
 	grid-auto-rows: 1fr;
-	grid-gap: 10px;
+	grid-gap: 30px;
 	justify-content: left;
 	align-items: left;
 	margin: 0;
 	height: 100%;
-	grid-template-areas: "header image content"
-		"header image content"
+	grid-template-areas:
 		"header image content";
 
 	&header {
 		grid-area: header;
 		@include vendor('grid', '0');
-		margin-bottom: _size(element-margin);
+		margin-bottom: _size(element-margin_sm);
 		padding: 0 2.5em;
 
 
@@ -61,23 +60,21 @@
 	}
 
 	.image {
-		grid-area: image;
-		margin-bottom: _size(element-margin);
-
+		grid-area: image; // margin-bottom: _size(element-margin_sm);
+		margin-bottom: 0;
 	}
 
 	.content {
 		grid-area: content;
-		margin-bottom: _size(element-margin);
 		justify-self: left;
 		align-self: left;
 		width: 80%;
-		margin: 0 0 _size(element-margin-bottom 0);
+		margin: 0 0 _size(element-margin_sm) 0;
 		--ms-flex: 1;
 
 		p {
 			padding: 1em;
-			margin-bottom: (_size(element-margin));
+			margin-bottom: _size(element-margin);
 		}
 
 		.button {
@@ -86,39 +83,38 @@
 	}
 }
 
-// @include breakpoint('<=medium') {
-// 	>section {
-// 		@include vendor('flex-wrap', 'wrap');
-// 		padding-left: 2em;
-// 		// width: 100%;
-// 	}
-
-// 	header {
-// 		margin-bottom: 1em;
-// 		padding: 0;
-// 		width: 100%;
-// 	}
-// }
-
-
 @include breakpoint('<=medium') {
 	.grid-container {
+		position: relative;
 		display: grid;
-		grid-template-areas: "header"
-			"image"
-			"content";
+		grid-template-columns: 1fr 1fr;
+		grid-auto-rows: 1fr;
+		grid-gap: 10px;
+		justify-content: left;
+		align-items: left;
+		width: 100%;
+		margin: 0;
+		height: 100%;
+		grid-template-areas:
+			"header image content";
 	}
 
 	.header h4,
 	p {
+		text-transform: uppercase;
+		// margin-bottom: 0.5em;
+		font-weight: _font(weight-bold);
 		margin-right: 5em;
-		margin-bottom: (_size(element-margin));
+		margin-bottom: _size(element-margin);
 	}
 
 	&.content p {
 		// color: green;
-		margin: -5em -11em _size(element-margin) 0;
+		margin: 2em 0em _size(element-margin) 0;
 		height: auto;
+		font-size: 1.75em;
+		width: 100%;
+
 	}
 
 	.image {
@@ -128,12 +124,11 @@
 
 	.button {
 		width: 100%;
-
 	}
-
 }
 
-@include breakpoint('<=small') {
+
+@include breakpoint('<=xsmall') {
 	.grid-container {
 		display: grid;
 		grid-template-areas: "header"
@@ -149,8 +144,9 @@
 
 	&.content p {
 		// color: green;
-		margin: -5em -5em _size(element-margin) 0;
+		margin: 2em 0em _size(element-margin) 0;
 		height: auto;
+
 	}
 
 	.image {

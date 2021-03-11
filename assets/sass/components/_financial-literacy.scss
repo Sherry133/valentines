@@ -1,5 +1,3 @@
-//COMING SOON
-
 #three {
     header.major-literacy.alt h1 {
         margin: 2em 0 _size(element-margin_sm) 0;
@@ -24,7 +22,7 @@
 
 
         .content-literacy p {
-            margin: 0 12em size(element0margin_sm) 0;
+            margin: 0 12em size(element-margin_sm) 0;
         }
 
         .fas {
@@ -33,7 +31,7 @@
 
         .content {
             --ms-flex: 1;
-            color: _palette(fg-med);
+            color: $color-black;
 
         }
 
@@ -89,14 +87,13 @@
             @include vendor('flex-wrap', 'wrap');
 
             .content-literacy p {
-                margin-bottom: _size(element-margin_sm);
+                margin-bottom: _size(element-margin);
                 margin-right: 4em;
             }
 
             .fas {
-                padding: 0 8px;
+                margin: 0 8px;
             }
         }
-
     }
 }
