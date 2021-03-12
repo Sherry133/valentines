@@ -37,7 +37,8 @@
 	align-items: left;
 	margin: 0;
 	height: 100%;
-	grid-template-areas:
+	grid-template-areas: "header image content"
+		"header image content"
 		"header image content";
 
 	&header {
@@ -61,11 +62,12 @@
 
 	.image {
 		grid-area: image; // margin-bottom: _size(element-margin_sm);
-		margin-bottom: 0;
+		margin-bottom: _size(element-margin);
 	}
 
 	.content {
 		grid-area: content;
+		margin-bottom: _size(element-margin);
 		justify-self: left;
 		align-self: left;
 		width: 80%;
@@ -83,54 +85,32 @@
 	}
 }
 
+
 @include breakpoint('<=medium') {
 	.grid-container {
-		position: relative;
 		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-auto-rows: 1fr;
-		grid-gap: 10px;
+		grid-template-columns: 300px 1fr;
+		grid-gap: 20px;
 		justify-content: left;
 		align-items: left;
-		width: 100%;
 		margin: 0;
 		height: 100%;
-		grid-template-areas:
+		grid-template-areas: "header image content"
+			"header image content"
 			"header image content";
 	}
 
-	.header h4 {
-		text-transform: uppercase;
+	>section {
+		@include vendor('flex-wrap', 'wrap');
+		padding-left: 2em;
 	}
 
-	.header h4,
-	p {
-
-		// margin-bottom: 0.5em;
-		font-weight: _font(weight-bold);
-		margin-right: 5em;
-		margin-bottom: _size(element-margin);
-	}
-
-	&.content p {
-		// color: green;
-		margin: 2em 0em _size(element-margin) 0;
-		height: auto;
-		font-size: 1.75em;
-		width: 100%;
-
-	}
-
-	.image {
-		position: relative;
-		margin: -5em -5em _size(element-margin) 0;
-	}
-
-	.button {
+	header {
+		margin-bottom: 1em;
+		padding: 0;
 		width: 100%;
 	}
 }
-
 
 @include breakpoint('<=xsmall') {
 	.grid-container {
@@ -143,14 +123,13 @@
 	.header h4,
 	p {
 		margin-right: 5em;
-		margin-bottom: (_size(element-margin));
+		margin-bottom: _size(element-margin);
 	}
 
 	&.content p {
 		// color: green;
-		margin: 2em 0em _size(element-margin) 0;
+		margin: -5em -5em _size(element-margin) 0;
 		height: auto;
-
 	}
 
 	.image {

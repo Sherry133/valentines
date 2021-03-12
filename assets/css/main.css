@@ -2955,11 +2955,12 @@ table.alt tbody tr td {
           align-items: left;
   margin: 0;
   height: 100%;
-      grid-template-areas: "header image content";
+      grid-template-areas: "header image content" "header image content" "header image content";
 }
 
 .grid-containerheader {
   -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
   -ms-grid-column: 1;
   grid-area: header;
   grid: 0;
@@ -2979,15 +2980,18 @@ table.alt tbody tr td {
 
 .grid-container .image {
   -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
   -ms-grid-column: 2;
   grid-area: image;
-  margin-bottom: 0;
+  margin-bottom: 2em;
 }
 
 .grid-container .content {
   -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
   -ms-grid-column: 3;
   grid-area: content;
+  margin-bottom: 2em;
   -ms-grid-column-align: left;
       justify-self: left;
   -ms-flex-item-align: left;
@@ -3009,44 +3013,29 @@ table.alt tbody tr td {
 
 @media screen and (max-width: 980px) {
   .grid-container {
-    position: relative;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 1fr;
-    grid-gap: 10px;
+    -ms-grid-columns: 300px 1fr;
+        grid-template-columns: 300px 1fr;
+    grid-gap: 20px;
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
     -webkit-box-align: left;
         -ms-flex-align: left;
             align-items: left;
-    width: 100%;
     margin: 0;
     height: 100%;
-        grid-template-areas: "header image content";
+        grid-template-areas: "header image content" "header image content" "header image content";
   }
-  .header h4 {
-    text-transform: uppercase;
+  > section {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 2em;
   }
-  .header h4,
-  p {
-    font-weight: 700;
-    margin-right: 5em;
-    margin-bottom: 2em;
-  }
-  .content p {
-    margin: 2em 0em 2em 0;
-    height: auto;
-    font-size: 1.75em;
-    width: 100%;
-  }
-  .image {
-    position: relative;
-    margin: -5em -5em 2em 0;
-  }
-  .button {
+  header {
+    margin-bottom: 1em;
+    padding: 0;
     width: 100%;
   }
 }
@@ -3063,7 +3052,7 @@ table.alt tbody tr td {
     margin-bottom: 2em;
   }
   .content p {
-    margin: 2em 0em 2em 0;
+    margin: -5em -5em 2em 0;
     height: auto;
   }
   .image {
@@ -4178,11 +4167,11 @@ body .testimonials {
 #main header.major-works p {
   margin: -1em 0 2em 0;
   color: #272727;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 #main .content-works p {
-  width: 70%;
+  width: 80%;
 }
 
 #main .content-works p:first-child:first-letter {
@@ -4259,6 +4248,7 @@ body .testimonials {
 
 .posts article .content-literacy p {
   margin: 0 12em size(element-margin_sm) 0;
+  width: 80%;
 }
 
 .posts article .fas {
@@ -4267,7 +4257,6 @@ body .testimonials {
 
 .posts article .content {
   --ms-flex: 1;
-  color: #272727;
 }
 
 .posts article .image {
@@ -4276,7 +4265,7 @@ body .testimonials {
   -webkit-box-ordinal-group: 100;
       -ms-flex-order: 99;
           order: 99;
-  margin: 0 3em 2em 2em;
+  margin: 0 9em 2em 2em;
 }
 
 .posts article.alt .image {
@@ -4285,7 +4274,7 @@ body .testimonials {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
-  margin: 0 2em 2em 0;
+  margin: 0 5em 2em 0;
 }
 
 @media screen and (max-width: 1280px) {
@@ -4329,8 +4318,8 @@ body .testimonials {
     flex-wrap: wrap;
   }
   .posts article .content-literacy p {
-    margin-bottom: 2em;
-    margin-right: 4em;
+    margin: 2em 4em 2em 0;
+    width: 90%;
   }
   .posts article .fas {
     margin: 0 8px;

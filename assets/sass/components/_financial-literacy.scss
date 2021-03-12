@@ -7,7 +7,6 @@
     header.major-literacy.alt h3 {
         margin: -1em 0 _size(element-margin) 0;
         color: $color-black;
-
     }
 }
 
@@ -23,6 +22,7 @@
 
         .content-literacy p {
             margin: 0 12em size(element-margin_sm) 0;
+            width: 80%;
         }
 
         .fas {
@@ -31,19 +31,19 @@
 
         .content {
             --ms-flex: 1;
-            color: $color-black;
+            // color: $color-blue;
 
         }
 
         .image {
             @include vendor('order', '99');
-            margin: 0 3em _size(element-margin) _size(element-margin);
+            margin: 0 9em _size(element-margin) _size(element-margin);
         }
 
         &.alt {
             .image {
                 @include vendor('order', '-1');
-                margin: 0 _size(element-margin) _size(element-margin) 0;
+                margin: 0 5em _size(element-margin) 0;
             }
         }
     }
@@ -87,8 +87,10 @@
             @include vendor('flex-wrap', 'wrap');
 
             .content-literacy p {
-                margin-bottom: _size(element-margin);
-                margin-right: 4em;
+                margin: 2em 4em _size(element-margin) 0;
+                // margin-bottom: _size(element-margin);
+                // margin-right: 4em;
+                width: 90%;
             }
 
             .fas {
