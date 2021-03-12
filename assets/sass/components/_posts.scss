@@ -67,8 +67,10 @@
 		article {
 			@include vendor('flex-wrap', 'wrap');
 
-			.content-post p {
+			.content-posts p {
 				margin-bottom: _size(element-margin_sm);
+				margin-right: 2em;
+				margin-top: 1em;
 			}
 
 			// &.image img {

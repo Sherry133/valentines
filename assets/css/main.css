@@ -2910,8 +2910,10 @@ table.alt tbody tr td {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-  .posts article .content-post p {
+  .posts article .content-posts p {
     margin-bottom: 1em;
+    margin-right: 2em;
+    margin-top: 1em;
   }
 }
 
