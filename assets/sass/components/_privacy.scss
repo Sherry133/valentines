@@ -1,0 +1,312 @@
+h2 .privacy-intro {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.major-privacy {
+    color: $color-blue;
+    margin: 1em 4em 0 2em;
+}
+
+.return-top {
+    margin-left: 2em;
+}
+
+#to {
+    position: relative;
+    padding: 15px;
+    border-top: 82px solid transparent;
+    margin-top: -50px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
+#to::before {
+    position: absolute;
+    content: "";
+    top: -25px;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #ccc;
+    //  visibility: hidden;
+}
+
+#gp {
+    position: relative;
+    padding: 15px;
+    border-top: 82px solid transparent;
+    margin-top: -50px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
+#gp {
+    position: absolute;
+    content: "";
+    top: -25px;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #ccc;
+    //  visibility: hidden;
+}
+
+#hs {
+    position: relative;
+    padding: 15px;
+    border-top: 82px solid transparent;
+    margin-top: -50px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
+#hs::before {
+    position: absolute;
+    content: "";
+    top: -25px;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #ccc;
+    //  visibility: hidden;
+}
+
+#wh {
+    position: relative;
+    padding: 15px;
+    border-top: 82px solid transparent;
+    margin-top: -50px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
+#wh::before {
+    position: absolute;
+    content: "";
+    top: -25px;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #ccc;
+    //  visibility: hidden;
+}
+
+#te {
+    position: relative;
+    padding: 15px;
+    border-top: 82px solid transparent;
+    margin-top: -50px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
+#te::before {
+    position: absolute;
+    content: "";
+    top: -25px;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #ccc;
+    //  visibility: hidden;
+}
+
+#oo {
+    position: relative;
+    padding: 15px;
+    border-top: 82px solid transparent;
+    margin-top: -50px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
+#oo::before {
+    position: absolute;
+    content: "";
+    top: -25px;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #ccc;
+    //  visibility: hidden;
+}
+
+#ai {
+    position: relative;
+    padding: 15px;
+    border-top: 82px solid transparent;
+    margin-top: -50px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
+#ai::before {
+    position: absolute;
+    content: "";
+    top: -25px;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #ccc;
+    //  visibility: hidden;
+}
+
+#pc {
+    position: relative;
+    padding: 15px;
+    border-top: 82px solid transparent;
+    margin-top: -50px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
+#pc::before {
+    position: absolute;
+    content: "";
+    top: -25px;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #ccc;
+    //  visibility: hidden;
+}
+
+#at {
+    position: relative;
+    padding: 15px;
+    border-top: 82px solid transparent;
+    margin-top: -50px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
+#at::before {
+    position: absolute;
+    content: "";
+    top: -25px;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #ccc;
+    //  visibility: hidden;
+}
+
+#qc {
+    position: relative;
+    padding: 15px;
+    border-top: 82px solid transparent;
+    margin-top: -50px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
+#qc::before {
+    position: absolute;
+    content: "";
+    top: -25px;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #ccc;
+    //  visibility: hidden;
+}
+
+.privacy-list1 {
+    // color: $color-black;
+    margin: 1em 4em 1em 2em;
+    list-style: none;
+}
+
+#main .fas {
+    color: $color-red-apple;
+}
+
+.privacy-list1 a {
+    color: purple;
+    margin: 1em;
+}
+
+ul.privacy-list1 a:hover {
+    text-decoration: none;
+    color: transparent;
+}
+
+.privacy-list {
+    padding: 1em;
+    list-style: none;
+}
+
+p.privacy-content {
+    color: $color-black;
+    text-decoration: none;
+    margin: 0em 4em 0em 1.5em;
+    background: #fff;
+
+}
+
+li.privacy-content {
+    // font-size: 1em;
+    color: $color-black;
+    text-decoration: none;
+    margin: 1em 4em 1em 1.5em;
+}
+
+.privacy-contact ul {
+    margin: 1rem 0 _size(element-margin_sm) 1rem;
+    text-decoration: none;
+    list-style: none;
+    color: $color-black;
+
+}
+
+
+//  **Mobile
+
+@include breakpoint('<=small') {
+    .major-privacy p {
+        width: 100%;
+        min-width: 95%;
+    }
+
+    .privacy-intro h2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        text-align: left;
+        width: 100%;
+        min-width: 95%;
+        margin-left: -3em;
+    }
+
+    .privacy-content p {
+        width: 95%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@include breakpoint('<=xsmall');

@@ -1,0 +1,163 @@
+/* Header */
+#main {
+    .inner .major-testimonials p {
+        color: $color-off-white;
+        font-weight: 300;
+        width: 80%;
+        letter-spacing: 1.5px;
+    }
+
+    .inner .major-testimonials h2 {
+        margin: 0 0;
+        letter-spacing: 3px;
+        color: $color-off-white;
+        font-weight: $font-weight-bold;
+    }
+
+    .inner .major.special-testimonials p {
+        color: #fff;
+        letter-spacing: 1.5px;
+    }
+
+    .inner .major.special-testimonials h1 {
+        color: #fff;
+        letter-spacing: 3px;
+        // z-index: 500000;
+    }
+}
+
+.major-testimonials .fas {
+    color: $color-red-apple;
+}
+
+body .testimonials {
+    background: #4B4D91;
+    z-index: -20;
+
+}
+
+// *********old code
+//legal text
+#main-content {
+    p {
+        margin: 2rem 2.5rem;
+        color: #272727;
+        max-width: 70vw;
+    }
+
+    .terms-last p {
+        padding-bottom: 2em;
+    }
+
+    //paragraph headers
+    h3 {
+        display: block;
+        font-weight: _size(weight-bold);
+        color: $color-blue;
+        padding: 0;
+        margin: 1em 4rem;
+        line-height: 1.3rem;
+        font-size: 2em;
+        padding-left: 3.5rem;
+        max-width: 90vw;
+
+    }
+
+    .terms-contact ul {
+        margin: 1rem 0 _size(element-margin_sm) 8rem;
+        text-decoration: none;
+        list-style: none;
+        color: #272727;
+
+    }
+}
+
+
+// ********end of old cold
+
+
+
+.image.main {
+    border: 0;
+    display: block;
+    position: relative;
+
+    img {
+        #main {
+
+            display: block;
+            position: relative;
+            padding: 0 (_size(element-margin) * 1.5) 0 !important;
+            width: 100%;
+
+
+            img {
+                width: 100%;
+                z-index: -5;
+                margin: 5em 0 0 0;
+            }
+        }
+    }
+
+}
+
+@include breakpoint('<=xsmall') {
+    #main {
+        margin: 0 0 .5em 0em;
+
+    }
+
+    .inner .major.special-testimonials p {
+        margin: 1.5em 0;
+    }
+
+    #main-content {
+        h3 {
+            font-weight: _size(weight-bold);
+            color: $color-blue;
+            letter-spacing: 2px;
+            text-align: left;
+            margin: 1rem 0;
+
+            font-size: 2em;
+
+            // padding-left: 3.5rem;
+            max-width: 90vw;
+        }
+
+        .terms-contact ul {
+            margin: 1rem 0 _size(element-margin_sm) 1rem;
+            text-decoration: none;
+            // list-style: none;
+            // color: #272727;
+        }
+
+
+    }
+}
+
+@include breakpoint('<=small') {
+    #main-content {
+        h3 {
+            margin: 0rem 0 _size(element-margin_sm) 0rem;
+
+            line-height: 1.3em;
+
+            // max-width: 80%;
+
+        }
+    }
+}
+
+@include breakpoint('<=medium') {
+    #main-content {
+        h3 {
+            margin: 0rem 0 _size(element-margin_sm) 0rem;
+
+            line-height: 1.3em;
+
+            // max-width: 80%;
+
+        }
+    }
+}

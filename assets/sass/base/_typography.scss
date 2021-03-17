@@ -171,6 +171,8 @@ hr {
 @include breakpoint('<=small') {
 	h1 {
 		font-size: 1.75em;
+		font-family: 'Poppins', sans-serif;
+		font-weight: _size(weight-bold);
 	}
 
 	h2 {

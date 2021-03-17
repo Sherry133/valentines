@@ -1,0 +1,29 @@
+.regulations a {
+    color: #ececec;
+    font-size: var(--fsbody);
+}
+
+.regulations ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.regulations ul li {
+    list-style: none;
+    margin: 1em auto;
+    /* margin-left: 260px;  */
+}
+
+.ssl-logo {
+    display: flex;
+    margin-bottom: 2em;
+    margin: 0 auto;
+    padding-bottom: 1em;
+    pointer-events: none;
+    cursor: default;
+}
+
+.ssl-logo img {
+    width: 100%;
+    height: auto;
+}
