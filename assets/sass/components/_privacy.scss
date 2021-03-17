@@ -29,6 +29,26 @@ h2 .privacy-intro {
     cursor: default;
 }
 
+#gp {
+    position: relative;
+    padding: 15px;
+    border-top: 82px solid transparent;
+    margin-top: -50px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
+#gp {
+    position: absolute;
+    content: "";
+    top: -25px;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #ccc;
+    //  visibility: hidden;
+}
+
 #to {
     position: relative;
     padding: 15px;
@@ -49,25 +69,7 @@ h2 .privacy-intro {
     //  visibility: hidden;
 }
 
-#gp {
-    position: relative;
-    padding: 15px;
-    border-top: 82px solid transparent;
-    margin-top: -50px;
-    -webkit-background-clip: padding-box;
-    -moz-background-clip: padding;
-    background-clip: padding-box;
-}
 
-#gp {
-    position: absolute;
-    content: "";
-    top: -25px;
-    left: 0;
-    right: 0;
-    border-top: 1px solid #ccc;
-    //  visibility: hidden;
-}
 
 #hs {
     position: relative;
@@ -231,7 +233,7 @@ h2 .privacy-intro {
 
 .privacy-list1 {
     // color: $color-black;
-    margin: 1em 4em 1em 2em;
+    margin: 0em 2em 1em 2em;
     list-style: none;
 }
 
@@ -241,7 +243,7 @@ h2 .privacy-intro {
 
 .privacy-list1 a {
     color: purple;
-    margin: 1em;
+    margin: .5em;
 }
 
 ul.privacy-list1 a:hover {
@@ -250,14 +252,14 @@ ul.privacy-list1 a:hover {
 }
 
 .privacy-list {
-    padding: 1em;
+    margin: 0em;
     list-style: none;
 }
 
 p.privacy-content {
     color: $color-black;
     text-decoration: none;
-    margin: 0em 4em 0em 1.5em;
+    margin: 0em 4em 0em -1em;
     background: #fff;
 
 }
@@ -266,11 +268,11 @@ li.privacy-content {
     // font-size: 1em;
     color: $color-black;
     text-decoration: none;
-    margin: 1em 4em 1em 1.5em;
+    margin: 1em 2em 0em 0em;
 }
 
 .privacy-contact ul {
-    margin: 1rem 0 _size(element-margin_sm) 1rem;
+    margin: 1rem 0 _size(element-margin_sm) 0rem;
     text-decoration: none;
     list-style: none;
     color: $color-black;
