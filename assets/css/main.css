@@ -4526,7 +4526,21 @@ h2 .privacy-intro {
 }
 
 .return-top {
-  margin-left: 2em;
+  position: relative;
+  padding: 15px;
+  border-top: 82px solid transparent;
+  margin-top: -50px;
+  background-clip: padding-box;
+}
+
+.return-top::before {
+  position: absolute;
+  content: "";
+  top: -25px;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #ccc;
+  cursor: default;
 }
 
 #to {
@@ -4760,7 +4774,6 @@ li.privacy-content {
     text-align: left;
     width: 100%;
     min-width: 95%;
-    margin-left: -3em;
   }
   .privacy-content p {
     width: 95%;
