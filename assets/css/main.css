@@ -1,4 +1,4 @@
-@import url(/Users/sherryavena/Desktop/NewSchoolSave copy/px-atmosphere-html/red/assets/sass/fontawesome-all.min.css);
+@import url(/Users/sherryavena/Desktop/NewSchoolSave 3-17-6PM/px-atmosphere-html/red/assets/sass/fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,700");
 html,
@@ -2987,7 +2987,7 @@ table.alt tbody tr td {
   -ms-grid-row-span: 3;
   -ms-grid-column: 2;
   grid-area: image;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .grid-container .content {
@@ -5698,7 +5698,7 @@ body.is-preload #banner:after {
     margin-bottom: 2em;
   }
   #footer .copyright li {
-    display: block;
+    display: inline-block;
     border-left: 0;
     margin-left: 0;
     padding-left: 0;
@@ -5715,6 +5715,11 @@ body.is-preload #banner:after {
   #footer form {
     padding: 2em 1.5em;
   }
+}
+
+html,
+body {
+  overflow-x: hidden !important;
 }
 
 .features li p {

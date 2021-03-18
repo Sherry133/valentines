@@ -94,6 +94,11 @@
 @import 'layout/main';
 @import 'layout/footer';
 
+html,
+body {
+	overflow-x: hidden !important;
+}
+
 .features li p {
 
 	color: #fff;

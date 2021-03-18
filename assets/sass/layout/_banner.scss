@@ -1,4 +1,8 @@
 /* Banner */
+// * {
+// 	outline: 1px red solid !important;
+// 	visibility: visible !important;
+// }
 
 #banner {
 	@include vendor('background-image', url("../../images/twoboysatschool.jpg"));

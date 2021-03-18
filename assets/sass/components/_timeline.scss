@@ -61,8 +61,8 @@
 	}
 
 	.image {
-		grid-area: image; // margin-bottom: _size(element-margin_sm);
-		margin-bottom: _size(element-margin);
+		grid-area: image;
+		margin-bottom: _size(element-margin_sm);
 	}
 
 	.content {
@@ -81,6 +81,7 @@
 
 		.button {
 			margin-left: 1.75em;
+
 		}
 	}
 }
@@ -142,14 +143,6 @@
 
 	}
 }
-
-
-
-// >section {
-// 	padding-left: 1.5em;
-// }
-
-
 
 @mixin color-timeline($p: null) {
 	$highlight: _palette($p, highlight);
