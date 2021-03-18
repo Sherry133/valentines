@@ -265,7 +265,8 @@ a {
 }
 
 a:hover {
-  text-decoration: none;
+  -webkit-text-decoration: #800080;
+          text-decoration: #800080;
 }
 
 strong,
@@ -4521,8 +4522,11 @@ h2 .privacy-intro {
 }
 
 .major-privacy {
-  color: #005a80;
   margin: 1em 4em 0 2em;
+}
+
+.inner .major-privacy h4 {
+  color: red;
 }
 
 .return-top {
@@ -4722,19 +4726,24 @@ h2 .privacy-intro {
   color: #CB1318;
 }
 
-.privacy-list1 a {
-  color: purple;
-  margin: .5em;
-}
-
-ul.privacy-list1 a:hover {
-  text-decoration: none;
-  color: transparent;
-}
-
 .privacy-list {
   margin: 0em;
   list-style: none;
+}
+
+.privacy-list1 a {
+  color: blue;
+  margin: .5em;
+}
+
+.privacy-list1 a:hover {
+  text-decoration: underline;
+  color: purple;
+}
+
+.privacy-list1 a:active {
+  text-decoration: underline;
+  color: green;
 }
 
 p.privacy-content {

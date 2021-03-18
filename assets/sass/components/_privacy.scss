@@ -5,8 +5,13 @@ h2 .privacy-intro {
 }
 
 .major-privacy {
-    color: $color-blue;
+    // color: $color-blue;
     margin: 1em 4em 0 2em;
+}
+
+.inner .major-privacy h4 {
+    // font-size: 1rem;
+    color: red;
 }
 
 .return-top {
@@ -241,19 +246,24 @@ h2 .privacy-intro {
     color: $color-red-apple;
 }
 
-.privacy-list1 a {
-    color: purple;
-    margin: .5em;
-}
-
-ul.privacy-list1 a:hover {
-    text-decoration: none;
-    color: transparent;
-}
-
 .privacy-list {
     margin: 0em;
     list-style: none;
+}
+
+.privacy-list1 a {
+    color: blue;
+    margin: .5em;
+}
+
+.privacy-list1 a:hover {
+    text-decoration: underline;
+    color: purple;
+}
+
+.privacy-list1 a:active {
+    text-decoration: underline;
+    color: green;
 }
 
 p.privacy-content {
