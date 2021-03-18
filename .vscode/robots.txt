@@ -1,0 +1,8 @@
+User-Agent: *
+Crawl-Delay: 20
+
+
+
+
+
+**//use a 301 redirect for old pages?
