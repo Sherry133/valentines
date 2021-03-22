@@ -1,4 +1,4 @@
-@import url(/Users/sherryavena/Desktop/NewSchoolSave 3-17-6PM/px-atmosphere-html/red/assets/sass/fontawesome-all.min.css);
+@import url(/Users/sherryavena/Desktop/NewSchoolSave Master 1.0/px-atmosphere-html/red/assets/sass/fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,700");
 html,
@@ -4722,7 +4722,7 @@ h2 .privacy-intro {
   list-style: none;
 }
 
-#main .fas {
+.fas {
   color: #CB1318;
 }
 
@@ -4749,7 +4749,7 @@ h2 .privacy-intro {
 p.privacy-content {
   color: #272727;
   text-decoration: none;
-  margin: 0em 4em 0em -1em;
+  margin: 0em 4em 0em 2em;
   background: #fff;
 }
 
@@ -5711,6 +5711,17 @@ body.is-preload #banner:after {
   }
   #footer .contact li {
     padding-left: 2.5em;
+  }
+  #footer .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   #footer form {
     padding: 2em 1.5em;
