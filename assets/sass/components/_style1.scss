@@ -21,6 +21,10 @@
     font-weight: _font(weight-bold);
 }
 
+.intro p {
+    width: 80%;
+}
+
 .intro .start-schools {
     color: $color-blue;
     font-weight: _font(weight);

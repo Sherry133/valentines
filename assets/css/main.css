@@ -1,4 +1,4 @@
-@import url(/Users/sherryavena/Desktop/NewSchoolSave Master 1.0/px-atmosphere-html/red/assets/sass/fontawesome-all.min.css);
+@import url(/Users/sherryavena/Desktop/NewSchoolSave Master 1.1/px-atmosphere-html/red/assets/sass/fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,700");
 html,
@@ -428,10 +428,12 @@ h2,
 h3,
 h4 {
   color: #005a80;
+  font-weight: font(weight-bold);
 }
 
 h5 {
   color: #005a80;
+  font-weight: font(weight-bold);
 }
 
 h6 {
@@ -3135,10 +3137,12 @@ table.alt tbody tr td {
 .wrapper.style1 h3,
 .wrapper.style1 h4 {
   color: #ffffff;
+  font-weight: font(weight-bold);
 }
 
 .wrapper.style1 h5 {
   color: #005a80;
+  font-weight: font(weight-bold);
 }
 
 .wrapper.style1 h6 {
@@ -3383,10 +3387,12 @@ table.alt tbody tr td {
 .wrapper.style2 h3,
 .wrapper.style2 h4 {
   color: #637485;
+  font-weight: font(weight-bold);
 }
 
 .wrapper.style2 h5 {
   color: #005a80;
+  font-weight: font(weight-bold);
 }
 
 .wrapper.style2 h6 {
@@ -3851,6 +3857,10 @@ body .testimonials {
   margin: .5em 0 -1em 0em;
   color: #266a2e;
   font-weight: 700;
+}
+
+.intro p {
+  width: 80%;
 }
 
 .intro .start-schools {
@@ -5356,10 +5366,12 @@ body.is-preload #banner:after {
 #footer form h3,
 #footer form h4 {
   color: #ffffff;
+  font-weight: font(weight-bold);
 }
 
 #footer form h5 {
   color: #005a80;
+  font-weight: font(weight-bold);
 }
 
 #footer form h6 {

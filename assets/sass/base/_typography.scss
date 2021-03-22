@@ -94,6 +94,7 @@ h3 {
 h4 {
 	font-size: 1em;
 	font-weight: _font(weight-bold);
+
 }
 
 h5 {
@@ -218,11 +219,12 @@ hr {
 	h3,
 	h4 {
 		color: _palette($p, fg-bold);
-		// color: $color-blue;
+		font-weight: font(weight-bold);
 	}
 
 	h5 {
 		color: $color-blue;
+		font-weight: font(weight-bold);
 	}
 
 	h6 {
