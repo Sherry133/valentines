@@ -44,10 +44,6 @@
 		width: 24em;
 	}
 
-	// #close h4 {
-	// 	color: $color-off-white;
-	// }
-
 	.close {
 		@include icon(false, solid);
 		content: '';
@@ -61,8 +57,8 @@
 		text-indent: 4em;
 		top: 0.5em;
 		width: 2em;
-		color: #fff;
-		// color: _palette(accent1, fg-bold);
+		// color: #fff;
+		color: _palette(accent1, fg-bold);
 
 		&:before {
 			// content: '\f00d';
@@ -107,16 +103,15 @@
 		}
 	}
 
-	@include breakpoint('<=small') {
+	@include breakpoint('<=xsmall') {
 		.inner {
 			max-height: 100%;
 			overflow-y: auto;
 			overflow-x: hidden;
 
 			.close {
-
 				background-size: 1.5em 1.5em;
-				color: $color-blue;
+				color: whitesmoke;
 				position: absolute;
 				top: 0.250em;
 				right: .75em;
@@ -126,7 +121,7 @@
 				line-height: .75em;
 				display: block;
 				text-indent: 0;
-				background-image: url("/images/outline_close.svg");
+				// background-image: url("/images/outline_close.svg");
 
 			}
 		}

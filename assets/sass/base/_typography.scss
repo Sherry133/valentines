@@ -43,6 +43,7 @@ a {
 	text-decoration: underline;
 
 	&:hover {
+		-webkit-text-decoration: #800080;
 		text-decoration: #800080;
 	}
 }
@@ -229,8 +230,11 @@ hr {
 
 	h6 {
 		color: $color-red-apple;
+		font-weight: bolder;
 		font-size: .85em;
 		letter-spacing: 2px;
+		top: 0;
+
 	}
 
 	blockquote {

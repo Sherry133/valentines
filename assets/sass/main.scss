@@ -80,7 +80,9 @@
 @import 'components/financial-literacy';
 @import 'components/regulations';
 @import 'components/termsnew';
+@import 'components/modal';
 @import 'components/privacy';
+
 
 
 
@@ -107,6 +109,6 @@ body {
 
 }
 
-.inner p {
-	color: #272727;
-}
+// .inner p {
+// 	color: #272727;
+// }

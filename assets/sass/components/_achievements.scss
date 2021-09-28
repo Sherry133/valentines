@@ -60,12 +60,12 @@
 }
 
 @include breakpoint('<=small') {
-    &.main {
+    .main {
         margin: 0 0.5em 0;
         width: 100%;
     }
 
-    &.major.special-achievements h2 {
+    .major.special-achievements h2 {
         margin: 0 0 3em .5em;
         line-height: 1em;
         color: $color-red;

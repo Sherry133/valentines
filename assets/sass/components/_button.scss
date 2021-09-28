@@ -68,9 +68,21 @@ button,
 		opacity: 0.25;
 	}
 
-	@include breakpoint('<=small') {
-		padding: 0;
+	@include breakpoint('<=xsmall') {
+
+		max-width: 20%;
 	}
+
+	// @media screen and (max-width: 480px) {
+	// 	.button .btn .large {
+	// 		display: inline-grid;
+	// 		flex-direction: column;
+	// 		flex-wrap: none;
+	// 		gap: 0;
+	// 		margin-right: 0;
+	// 	}
+
+	// }
 
 	input[type="submit"],
 	input[type="reset"],
