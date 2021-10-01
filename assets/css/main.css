@@ -1638,9 +1638,9 @@ button,
   pointer-events: none;
   opacity: 0.25;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 736px) {
   .button {
-    max-width: 20%;
+    max-width: 100%;
   }
 }
 .button input[type=submit],
@@ -2569,22 +2569,24 @@ table.alt tbody tr td {
   grid-auto-rows: 1fr;
   grid-gap: 30px;
   justify-content: left;
-  align-items: left;
+  align-items: center;
   margin: 0;
   height: 100%;
   grid-template-areas: "header image content" "header image content" "header image content";
 }
-.grid-containerheader {
+.grid-container .header {
   grid-area: header;
   grid: 0;
   margin-bottom: 1em;
   padding: 0 2.5em;
 }
-.grid-containerheader h4 {
+.grid-container .header h4 {
   font-weight: 700;
   text-transform: uppercase;
+  width: 30vw;
+  padding: 1em 2.5em;
 }
-.grid-containerheader.header p {
+.grid-container .header .header p {
   margin-bottom: 0.5em;
   font-weight: 700;
 }
@@ -2612,50 +2614,50 @@ table.alt tbody tr td {
 @media screen and (max-width: 980px) {
   .grid-container {
     display: grid;
-    grid-template-columns: 300px 1fr;
-    grid-gap: 20px;
+    grid-template-columns: 200px 250px 300px;
+    grid-gap: 13px;
     justify-content: left;
-    align-items: left;
-    margin: 0;
+    align-items: center;
+    margin: 0 0 1em 0;
     height: 100%;
     grid-template-areas: "header image content" "header image content" "header image content";
   }
 
-  > section {
+  > Section {
     flex-wrap: wrap;
-    padding-left: 2em;
+    padding-left: 0;
   }
 
-  header {
+  .header {
     margin-bottom: 1em;
     padding: 0;
     width: 100%;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 736px) {
   .grid-container {
     display: grid;
     grid-template-areas: "header" "image" "content";
   }
 
-  .header h4,
-p {
-    margin-right: 5em;
-    margin-bottom: 2em;
+  .header h4 p {
+    margin-bottom: 1em;
   }
 
   .content p {
-    margin: -5em -5em 2em 0;
-    height: auto;
+    margin: -6em 0 2em 0;
+    width: 100vw;
+    max-width: 80vw;
   }
 
   .image {
     position: relative;
-    margin: -6em -5em 2em 0;
+    margin: -14em -5em 2em 0;
   }
 
-  .button {
+  .button .small .primary .scrolly {
     width: 100%;
+    margin-bottom: 1em;
   }
 }
 /* Wrapper */
@@ -2888,7 +2890,7 @@ p {
 .wrapper.style1 .timeline > section:before {
   background-color: rgba(255, 255, 255, 0.75);
 }
-.wrapper.style1 .timeline header p {
+.wrapper.style1 .timeline .header p {
   color: #ffffff;
 }
 .wrapper.style1:before, .wrapper.style1:after {
@@ -3108,11 +3110,16 @@ p {
 .wrapper.style2 .timeline > section:before {
   background-color: #bbb;
 }
-.wrapper.style2 .timeline header p {
+.wrapper.style2 .timeline .header p {
   color: #b7475a;
 }
 .wrapper.style2:before, .wrapper.style2:after {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,0 0,100 100,100' style='fill:%23f5f8fa%3B' /%3E%3C/svg%3E");
+}
+.wrapper.style2 .timeline .header h4 p {
+  width: 100%;
+  line-height: 1em;
+  margin-left: -2em;
 }
 @media screen and (max-width: 1280px) {
   .wrapper {
@@ -3142,6 +3149,19 @@ p {
   }
   .wrapper.alt {
     padding-bottom: 0;
+  }
+  .wrapper.style2 .timeline .header p {
+    width: 100%;
+    min-width: 80vw;
+    line-height: 1em;
+    margin-left: -2em;
+    margin-top: -6em;
+  }
+  .wrapper.style2 .timeline .header h4 {
+    width: 100%;
+    min-width: 80vw;
+    line-height: 1em;
+    margin-left: -2em;
   }
 }
 
@@ -4618,7 +4638,7 @@ body.is-menu-visible #menu .inner {
 #banner .button {
   min-width: 14em;
   border-radius: 8px;
-  margin-top: 20%;
+  margin-top: 0%;
 }
 #banner > .inner {
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
@@ -4963,7 +4983,7 @@ body.is-preload #banner:after {
 #footer form .timeline > section:before {
   background-color: rgba(255, 255, 255, 0.75);
 }
-#footer form .timeline header p {
+#footer form .timeline .header p {
   color: #ffffff;
 }
 #footer form h3 {

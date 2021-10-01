@@ -5,8 +5,10 @@
 	display: block;
 	position: relative;
 
+
 	img {
 		display: block;
+
 	}
 
 	&.left,
@@ -58,19 +60,5 @@
 			margin: 0 0 _size(element-margin) 0;
 		}
 	}
+
 }
-
-//FROM GREEN
-// a.image {
-// 	overflow: hidden;
-
-// 	img {
-// 		@include vendor('transition', 'transform #{_duration(transition)} ease');
-// 	}
-
-// 	&:hover {
-// 		img {
-// 			@include vendor('transform', 'scale(1.05)');
-// 		}
-// 	}
-// }

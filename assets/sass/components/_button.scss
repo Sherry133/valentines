@@ -47,6 +47,7 @@ button,
 			font-size: 0.95em;
 			margin-right: 0.5em;
 		}
+
 	}
 
 	&.fit {
@@ -60,6 +61,7 @@ button,
 
 	&.large {
 		font-size: 0.95em;
+
 	}
 
 	&.disabled,
@@ -68,21 +70,10 @@ button,
 		opacity: 0.25;
 	}
 
-	@include breakpoint('<=xsmall') {
+	@include breakpoint('<=small') {
 
-		max-width: 20%;
+		max-width: 100%;
 	}
-
-	// @media screen and (max-width: 480px) {
-	// 	.button .btn .large {
-	// 		display: inline-grid;
-	// 		flex-direction: column;
-	// 		flex-wrap: none;
-	// 		gap: 0;
-	// 		margin-right: 0;
-	// 	}
-
-	// }
 
 	input[type="submit"],
 	input[type="reset"],
@@ -106,6 +97,8 @@ button,
 		white-space: nowrap;
 
 	}
+
+
 }
 
 @mixin color-button($p: null) {
@@ -141,6 +134,7 @@ button,
 			@if $p==$highlight {
 				background-color: _palette($p, fg-bold);
 				color: _palette($p, bg) !important;
+
 
 				&.icon {
 					&:before {
