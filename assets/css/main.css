@@ -3925,6 +3925,7 @@ body .testimonials {
   position: relative;
   display: block;
   margin: 0 auto;
+  width: 70%;
   max-width: 100%;
   max-height: 100%;
 }
@@ -3937,10 +3938,12 @@ a:link {
   cursor: pointer;
   text-decoration: none;
   font-size: 0.75em;
+  color: green;
 }
 
-.modal-footer h4:hover {
-  color: turquoise;
+.modal-footer h4:hover,
+.modal-footer h4:focus {
+  color: #6b4247;
 }
 
 #popup {
@@ -3958,7 +3961,7 @@ a:link {
 /* **can change width to 400px so it won't change size. Check on mobile. */
 #popup .modal-content {
   margin: 3% auto;
-  max-width: 50%;
+  max-width: 60%;
   max-height: 40%;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
   -webkit-animation-name: modalopen;
@@ -4010,20 +4013,20 @@ a:link {
   position: absolute;
   display: grid;
   top: 2.25%;
-  left: 71%;
+  left: 73%;
   justify-content: right;
   align-items: right;
   padding: 0;
   color: green;
-  font-size: clamp(.25rem, 1.25rem, calc(1.50rem + 5px));
+  font-size: clamp(.50rem, 1.25rem, calc(1.50rem + 5px));
   font-weight: bold;
   text-decoration: none;
 }
 
 @media (min-width: 40em) {
   #popup a.close-popup {
-    top: 5.25%;
-    left: 70.5%;
+    top: 6.5%;
+    left: 75%;
     font-size: 40px;
   }
 }
@@ -4033,7 +4036,7 @@ a:link {
 
 #popup a.close-popup:hover,
 #popup.close-popup:focus {
-  color: turquoise;
+  color: #6b4247;
   text-decoration: none;
   cursor: pointer;
   transform: rotate(720deg);
