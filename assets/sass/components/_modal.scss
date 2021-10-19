@@ -1,6 +1,7 @@
 :root {
     --modal-duration: 1s;
-    --modal-color: #428bcb;
+    --modal-color: #fff;
+    --modal-font-family: 'Poppins', sans-serif;
 }
 
 .modal-header img {
@@ -53,9 +54,10 @@ a:link {
 .modal-footer h3 {
     margin: 0;
     padding-bottom: .5em;
-    color: #fff;
+    color: green;
     text-align: center;
     font-size: clamp(.25rem, 1.25rem, calc(1.50rem + 5px));
+    font-family: var(--modal-font-family);
 }
 
 @media (min-width: 40em) {
@@ -97,7 +99,7 @@ a:link {
     justify-content: right;
     align-items: right;
     padding: 0;
-    color: #fff;
+    color: green;
     font-size: clamp(.25rem, 1.25rem, calc(1.50rem + 5px));
     // font-size: 30px;
     font-weight: bold;

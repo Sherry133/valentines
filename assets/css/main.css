@@ -3152,7 +3152,7 @@ p {
   width: 80%;
   letter-spacing: 1.5px;
 }
-#main .inner .major-testimonials h2 {
+#main .inner .major-testimonials h3 {
   margin: 0 0;
   letter-spacing: 3px;
   color: #ececec;
@@ -3341,10 +3341,12 @@ body .testimonials {
   width: 80%;
   font-weight: 400;
   color: #272727;
+  margin-bottom: 0.5em;
 }
 
 .item-nested-start h2 {
   color: #005a80;
+  margin-bottom: 0.5em;
 }
 
 .item-nested h2 {
@@ -3895,7 +3897,8 @@ body .testimonials {
 }
 :root {
   --modal-duration: 1s;
-  --modal-color: #428bcb;
+  --modal-color: #fff;
+  --modal-font-family: "Poppins", sans-serif;
 }
 
 .modal-header img {
@@ -3948,9 +3951,10 @@ a:link {
 .modal-footer h3 {
   margin: 0;
   padding-bottom: 0.5em;
-  color: #fff;
+  color: green;
   text-align: center;
   font-size: clamp(.25rem, 1.25rem, calc(1.50rem + 5px));
+  font-family: var(--modal-font-family);
 }
 
 @media (min-width: 40em) {
@@ -3990,7 +3994,7 @@ a:link {
   justify-content: right;
   align-items: right;
   padding: 0;
-  color: #fff;
+  color: green;
   font-size: clamp(.25rem, 1.25rem, calc(1.50rem + 5px));
   font-weight: bold;
   text-decoration: none;

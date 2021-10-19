@@ -28,6 +28,7 @@
 .intro .start-schools {
     color: $color-blue;
     font-weight: _font(weight);
+
 }
 
 .item-nested-start .fas {
@@ -44,10 +45,13 @@
     width: 80%;
     font-weight: 400;
     color: $color-black;
+    margin-bottom: .5em;
 }
 
 .item-nested-start h2 {
-    color: $color-blue
+    color: $color-blue;
+    margin-bottom: .5em;
+
 }
 
 .item-nested h2 {
