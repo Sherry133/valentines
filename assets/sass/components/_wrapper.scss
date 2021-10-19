@@ -2,9 +2,6 @@
 
 /// Sets the colors of the wrapper's top/bottom edges.
 
-
-
-
 /// @param {string} $color Color.
 @mixin wrapper-edges-color($color: black) {
 
@@ -60,6 +57,13 @@
 	&.style2 {
 		@include color(accent2);
 		@include wrapper-edges-color(_palette(accent2, bg));
+
+	}
+
+	&.style2 .timeline .header h4 p {
+		width: 100%;
+		line-height: 1em;
+		margin-left: -2em;
 	}
 
 	@include breakpoint('<=large') {
@@ -77,15 +81,13 @@
 		&:before,
 		&:after {
 			height: 3em;
-
-
 		}
-
 
 	}
 
 	@include breakpoint('<=small') {
 		@include padding(3em, 0);
+
 
 		>.inner {
 			width: calc(100% - 3em);
@@ -99,5 +101,21 @@
 		&.alt {
 			padding-bottom: 0;
 		}
+
+		&.style2 .timeline .header p {
+			width: 100%;
+			min-width: 80vw;
+			line-height: 1em;
+			margin-left: -2em;
+			margin-top: -6em;
+		}
+
+		&.style2 .timeline .header h4 {
+			width: 100%;
+			min-width: 80vw;
+			line-height: 1em;
+			margin-left: -2em;
+		}
+
 	}
 }
