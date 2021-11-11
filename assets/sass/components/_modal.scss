@@ -1,17 +1,45 @@
 :root {
     --modal-duration: 1s;
-    --modal-color: #fff;
+    --modal-color: hsl(0deg 0% 100%);
     --modal-font-family: 'Poppins', sans-serif;
 }
+
+body {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+// .modal-header img {
+//     position: relative;
+//     display: block;
+//     margin: 0 auto;
+//     width: 70%;
+//     max-width: 100vw;
+//     max-height: 100vh;
+//     transition: 200ms transform ease-in-out;
+// }
 
 .modal-header img {
     position: relative;
     display: block;
-    margin: 0 auto;
-    width: 70%;
+    width: 100%;
+    height: 100%;
     max-width: 100%;
     max-height: 100%;
+    transition: 200ms transform ease-in-out;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: center;
+    object-position: center;
+    aspect-ratio: 16 / 9;
+    overflow: auto;
 }
+
+.modal-header img:hover,
+.modal-header img:focus {
+    // background-color: hsl(159, 43%, 59%);
+    transform: scale(1.05)
+}
+
 
 a:link {
     text-decoration: none;
@@ -21,31 +49,38 @@ a:link {
     cursor: pointer;
     text-decoration: none;
     font-size: .75em;
-    color: green;
+    color: rgb(107, 66, 71);
+    // transition: 1ms transform ease-in-out;
 }
 
 .modal-footer h4:hover,
 .modal-footer h4:focus {
-    color: rgb(107, 66, 71);
+    display: inline-block;
+    color: green;
+    // transform: scale(1.25)
 }
 
 #popup {
+    position: absolute;
     display: block;
-    position: fixed;
     z-index: 10;
-    left: 0;
-    top: 0;
+    left: 0%;
+    top: 10%;
     height: 100%;
     width: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.3);
+    transform: translate (-50%, -50%);
+    // background-color: rgba(0, 0, 0, 0.3);
+
+
 }
 
 /* **can change width to 400px so it won't change size. Check on mobile. */
 #popup .modal-content {
+
     margin: 3% auto;
-    max-width: 60%;
-    max-height: 40%;
+    max-width: 70%;
+    max-height: 100%;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
     -webkit-animation-name: modalopen;
     animation-name: modalopen;
@@ -59,7 +94,7 @@ a:link {
     padding-bottom: .5em;
     color: green;
     text-align: center;
-    font-size: clamp(.25rem, 1.25rem, calc(1.50rem + 5px));
+    font-size: clamp(.25rem, 1.05rem, calc(1.5rem + 5px));
     font-family: var(--modal-font-family);
 }
 
@@ -72,7 +107,7 @@ a:link {
 
     .modal-footer h4 {
         text-decoration: none;
-        font-size: 1em;
+        font-size: 1.5em;
     }
 }
 
@@ -97,23 +132,31 @@ a:link {
 #popup a.close-popup {
     position: absolute;
     display: grid;
-    top: 2.25%;
-    left: 73%;
+    top: 1.25%;
+    right: 17%;
     justify-content: right;
     align-items: right;
     padding: 0;
-    color: green;
-    font-size: clamp(.50rem, 1.25rem, calc(1.50rem + 5px));
+    color: rgb(107, 66, 71);
+    font-size: clamp(.50rem, 1rem, calc(3.50rem + 5px));
     // font-size: 30px;
     font-weight: bold;
     text-decoration: none;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 47.8em) {
     #popup a.close-popup {
-        top: 6.5%;
-        left: 75%;
-        font-size: 40px;
+        top: 1.5%;
+        right: 17%;
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 64em) {
+    #popup a.close-popup {
+        top: 4.55%;
+        right: 17%;
+        font-size: 3.5em;
     }
 }
 
@@ -123,7 +166,7 @@ a:link {
 
 #popup a.close-popup:hover,
 #popup.close-popup:focus {
-    color: rgb(107, 66, 71);
+    color: green;
     text-decoration: none;
     cursor: pointer;
     transform: rotate(720deg);
