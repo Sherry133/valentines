@@ -3926,8 +3926,8 @@ body .testimonials {
   --modal-font-family: "Poppins", sans-serif;
 }
 
-body {
-  background-color: #fff;
+#popup {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .modal-header {
