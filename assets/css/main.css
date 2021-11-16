@@ -4715,7 +4715,7 @@ body.is-preload #banner:after {
     padding: 16em 3em;
   }
   #banner h4 {
-    color: white;
+    color: #fff;
     font-weight: normal;
     letter-spacing: 0.15em;
   }
@@ -4730,7 +4730,7 @@ body.is-preload #banner:after {
     text-align: center;
   }
   #banner h4 {
-    color: white;
+    color: #fff;
     font-weight: normal;
     letter-spacing: 0.15em;
   }
@@ -4747,7 +4747,7 @@ body.is-preload #banner:after {
     color: inherit;
   }
   #banner h4 {
-    color: white;
+    color: #fff;
     font-weight: normal;
     letter-spacing: 0.15em;
   }
@@ -4767,7 +4767,7 @@ body.is-preload #banner:after {
     margin-top: 12em;
   }
   #banner h4 {
-    color: white;
+    color: #fff;
     font-weight: normal;
     letter-spacing: 0.15em;
   }
