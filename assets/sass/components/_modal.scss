@@ -5,13 +5,14 @@
 }
 
 body {
-    background-color: rgba(0, 0, 0, 0.3);
+    // background-color: rgba(0, 0, 0, 0.3);
+    background-color: #fff;
 }
 
 .modal-header {
     padding: 1rem;
-    margin-bottom: 1rem;
-    padding-bottom: .5rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .modal-header img {
@@ -109,7 +110,7 @@ a:link {
 
 .modal-header {
     background: var(--modal-color);
-    padding: 15px;
+    padding: 1em;
     color: #fff;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -118,7 +119,7 @@ a:link {
 
 .modal-footer {
     background: var(--modal-color);
-    padding: 1.25em;
+    padding: .15em;
     color: #fff;
     text-align: center;
     border-bottom-left-radius: 5px;
