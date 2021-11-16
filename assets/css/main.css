@@ -3938,7 +3938,7 @@ body {
   -o-object-position: center;
   object-position: center;
   aspect-ratio: 16/9;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .modal-header img:hover,

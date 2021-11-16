@@ -8,30 +8,30 @@ body {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-// .modal-header img {
-//     position: relative;
-//     display: block;
-//     margin: 0 auto;
-//     width: 70%;
-//     max-width: 100vw;
-//     max-height: 100vh;
-//     transition: 200ms transform ease-in-out;
-// }
+.modal-header {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+}
 
 .modal-header img {
-    position: relative;
+    overflow: hidden;
+}
+
+#popup .modal-header>img {
+    // position: relative;
     display: block;
     width: 100%;
-    height: 100%;
+    // height: 100%;
     max-width: 100%;
-    max-height: 100%;
+    max-height: 200%;
     transition: 200ms transform ease-in-out;
+    aspect-ratio: 16 / 9;
     -o-object-fit: contain;
     object-fit: contain;
     -o-object-position: center;
     object-position: center;
-    aspect-ratio: 16 / 9;
-    overflow: auto;
+    // overflow: hidden;
 }
 
 .modal-header img:hover,
@@ -70,14 +70,10 @@ a:link {
     width: 100%;
     overflow: auto;
     transform: translate (-50%, -50%);
-    // background-color: rgba(0, 0, 0, 0.3);
-
-
 }
 
 /* **can change width to 400px so it won't change size. Check on mobile. */
 #popup .modal-content {
-
     margin: 3% auto;
     max-width: 70%;
     max-height: 100%;
@@ -152,9 +148,9 @@ a:link {
     }
 }
 
-@media (min-width: 64em) {
+@media (min-width: 65em) {
     #popup a.close-popup {
-        top: 4.55%;
+        top: 2.5%;
         right: 17%;
         font-size: 3.5em;
     }
