@@ -4709,6 +4709,18 @@ body.is-preload #banner .inner {
 body.is-preload #banner:after {
   opacity: 0.4;
 }
+@media screen and (min-width: 1281px) {
+  #banner {
+    background-attachment: scroll;
+    padding: 16em 3em;
+  }
+  #banner h4 {
+    color: #fff;
+    font-weight: normal;
+    letter-spacing: 0.15em;
+    font-size: 1.75em;
+  }
+}
 @media screen and (max-width: 1280px) {
   #banner {
     background-attachment: scroll;
@@ -4718,6 +4730,7 @@ body.is-preload #banner:after {
     color: #fff;
     font-weight: normal;
     letter-spacing: 0.15em;
+    font-size: 1.5em;
   }
 }
 @media screen and (max-width: 980px) {
@@ -4733,6 +4746,7 @@ body.is-preload #banner:after {
     color: #fff;
     font-weight: normal;
     letter-spacing: 0.15em;
+    font-size: 1.5em;
   }
 }
 @media screen and (max-width: 736px) {
@@ -4742,7 +4756,7 @@ body.is-preload #banner:after {
   #banner p {
     margin: 0em 0 0.65em 0;
     padding: 0;
-    font-size: 1.25em;
+    font-size: 1.5em;
     text-align: center;
     color: inherit;
   }
@@ -4750,6 +4764,7 @@ body.is-preload #banner:after {
     color: #fff;
     font-weight: normal;
     letter-spacing: 0.15em;
+    font-size: 1.25em;
   }
 }
 @media screen and (max-width: 480px) {
@@ -4763,13 +4778,14 @@ body.is-preload #banner:after {
     font-weight: 400;
   }
   #banner p {
-    font-size: 1.25;
+    font-size: 1.5em;
     margin-top: 12em;
   }
   #banner h4 {
     color: #fff;
     font-weight: normal;
     letter-spacing: 0.15em;
+    font-size: 1.25em;
   }
   #banner .button {
     max-width: 7em;
