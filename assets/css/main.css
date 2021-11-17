@@ -4724,7 +4724,7 @@ body.is-preload #banner:after {
 @media screen and (max-width: 1280px) {
   #banner {
     background-attachment: scroll;
-    padding: 16em 3em;
+    padding: 14em 3em;
   }
   #banner h4 {
     color: #fff;
