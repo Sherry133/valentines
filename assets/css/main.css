@@ -4037,10 +4037,6 @@ a:link {
   border-bottom-right-radius: 5px;
 }
 
-.modal-close {
-  color: #6b4247;
-}
-
 #popup a.close-popup {
   position: absolute;
   display: grid;
