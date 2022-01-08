@@ -57,7 +57,7 @@ a:link {
 .modal-footer h4:hover,
 .modal-footer h4:focus {
     display: inline-block;
-    color: green;
+    color: #000;
     // transform: scale(1.25)
 }
 
@@ -89,7 +89,7 @@ a:link {
 .modal-footer h3 {
     margin: 0;
     padding-bottom: .5em;
-    color: green;
+    color: #000;
     text-align: center;
     font-size: clamp(.25rem, 1.05rem, calc(1.5rem + 5px));
     font-family: var(--modal-font-family);
@@ -120,7 +120,7 @@ a:link {
 .modal-footer {
     background: var(--modal-color);
     padding: .15em;
-    color: #fff;
+    // color: #fff;
     text-align: center;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -163,7 +163,7 @@ a:link {
 
 #popup a.close-popup:hover,
 #popup.close-popup:focus {
-    color: green;
+    color: #000;
     text-decoration: none;
     cursor: pointer;
     transform: rotate(720deg);
