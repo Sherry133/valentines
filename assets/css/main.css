@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import 'fontawesome-all.min.css';
+@import "fontawesome-all.min.css";
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,700");
 html,
@@ -4076,6 +4076,55 @@ a:link {
   cursor: pointer;
   transform: rotate(720deg);
   transition: transform 3s ease-out;
+}
+
+@-webkit-keyframes heartfade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes heartfade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.heart {
+  z-index: 1999;
+  -webkit-animation: heartfade 6s linear;
+  animation: heartfade 6s linear;
+  position: absolute;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: #fc2a62;
+  position: absolute;
+  height: 30px;
+  width: 45px;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.heart:before {
+  transform: rotate(45deg);
+}
+
+.heart:after {
+  left: 10.5px;
+  transform: rotate(135deg);
+}
+
+.heart {
+  z-index: 1999;
+  -webkit-animation: heartfade 6s linear;
+  animation: heartfade 6s linear;
+  position: absolute;
 }
 
 h2 .privacy-intro {
