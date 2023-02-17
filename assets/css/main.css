@@ -4011,11 +4011,13 @@ h4.close-link:hover {
   font-size: 2.5em;
   text-align: center;
   }
+}
   @media (min-width: 40em) {
    .close-link h4{
     font-size: 2.5em;
     text-align: center;
     }
+  }
  
 .modal-header {
   padding: 1em;
@@ -4038,13 +4040,13 @@ h4.close-link:hover {
 #popup a.close-popup {
   position: absolute;
   display: grid;
-  top: 0.75rem;
+  top: 2.75rem;
   right: 17%;
   justify-content: right;
   align-items: right;
   padding: 0;
   color: slategray;
-  font-size: .5rem;
+  font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
 }
