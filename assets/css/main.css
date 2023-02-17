@@ -4816,15 +4816,16 @@ body.is-preload #banner:after {
     font-size: 1.25em;
   }
 }
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   #banner {
     background-image: url("../../images/twoboysatschool_sm.jpg");
   }
-  #banner h1 {
+#banner h1 {
     font-size: 1.75em;
-    margin-top: -4em;
-    line-height: 1em;
-    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    margin-top: .05em;
+    line-height: 1.3em;
+    font-weight: 600;
   }
   #banner p {
     font-size: 1.5em;
@@ -4843,6 +4844,13 @@ body.is-preload #banner:after {
 @media screen and (max-width: 360px) {
   #banner {
     padding: 6em 2em;
+  }
+  #banner h1 {
+    font-size: 1.75em;
+    font-family: 'Poppins', sans-serif;
+    margin-top: .05em;
+    line-height: 1.3em;
+    font-weight: 600;
   }
 }
 
